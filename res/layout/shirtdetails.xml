@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="fill_parent" android:padding="20dp"
+		android:layout_height="fill_parent">
+		<TextView android:id="@+id/shirtdetails_color_label" android:textSize="20sp"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:layout_alignParentTop="true" android:gravity="center"
+			android:text="Shirt Color" android:textStyle="bold" android:paddingTop="10dp"
+			android:paddingBottom="4dp" />
+		<GridView android:id="@+id/shirtdetails_colors"
+			android:numColumns="6" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:verticalSpacing="5dp"
+			android:horizontalSpacing="5dp" android:stretchMode="columnWidth"
+			android:gravity="center" android:background="#222222"
+			android:layout_below="@id/shirtdetails_color_label" android:padding="5dp"
+			android:layout_margin="2dp" />
+		<LinearLayout android:id="@+id/ll" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:gravity="center" android:padding="5dp" android:layout_below="@id/shirtdetails_colors">
+			<TextView android:id="@+id/shirtdetails_color_name"
+				android:padding="5dp" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<ImageView android:id="@+id/shirtdetails_color_swatch"
+				android:layout_height="40dp" android:layout_width="40dp" />
+		</LinearLayout>
+		<TextView android:id="@+id/shirtdetails_size_label" android:textSize="20sp"
+		android:paddingTop="35dp"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:layout_below="@id/ll" android:gravity="center" android:text="Shirt Size"
+			android:textStyle="bold" />
+
+		<RadioGroup android:layout_below="@id/shirtdetails_size_label"
+			android:id="@+id/rg" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:gravity="center" android:layout_margin="10dp">
+			<RadioButton android:checked="false" android:id="@+id/size_s"
+				android:text="S" />
+			<RadioButton android:checked="false" android:id="@+id/size_m"
+				android:text="M" />
+			<RadioButton android:checked="false" android:id="@+id/size_l"
+				android:text="L" />
+			<RadioButton android:checked="false" android:id="@+id/size_xl"
+				android:text="XL" />
+		</RadioGroup>
+		<Button android:id="@+id/shirtdetails_next"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+			android:text="Next (Adjust Image)" />
+	</RelativeLayout>

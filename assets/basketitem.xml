@@ -1,0 +1,16 @@
+<basketItem xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://api.spreadshirt.net">
+	<!-- optional for mixed mode -->
+	<shop id="351307" xlink:href="http://api.spreadshirt.net/v1/shops/351307" />
+		<description>Basket Item description</description>
+		<quantity>1</quantity>
+		<element id="productid" type="sprd:product"
+			xlink:href="producturl">
+			<properties>
+				<property key="appearance">appearanceID</property>
+				<property key="size">shirtSize</property>
+			</properties>
+		</element>
+		<price>
+			<currency id="1" xlink:href="http://api.spreadshirt.net/v1/currencies/1" />
+		</price>
+</basketItem>

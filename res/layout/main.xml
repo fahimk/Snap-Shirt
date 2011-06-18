@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:padding="20dp" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/welcome" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="18dp"
+		android:gravity="center" android:layout_alignParentTop="true"
+		android:text="SnapShirt lets you turn your pictures into t-shirts. Simply take a picture with your phone, and follow the instructions to create your own custom t-shirt."
+		android:textSize="12sp" android:textStyle="italic" />
+
+	<ImageView android:padding="20dp" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@id/welcome"
+		android:adjustViewBounds="true" android:scaleType="centerInside"
+		android:layout_above="@+id/main_button_camera" android:src="@drawable/snapshirt_full" />
+	<Button android:layout_alignParentBottom="true"
+		android:id="@id/main_button_camera" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Start (Camera)" />
+</RelativeLayout>

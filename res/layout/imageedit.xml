@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="20dp">
+	<ImageView android:layout_alignParentTop="true" android:id="@+id/image_rotate"
+		android:layout_width="300dp" android:layout_height="300dp"
+		android:adjustViewBounds="true" android:scaleType="centerInside" 
+		android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+	<LinearLayout android:id="@+id/buttons" android:padding="10dp"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:orientation="horizontal" android:layout_below="@id/image_rotate" >
+		<Button android:id="@+id/rotate_left" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="left"
+			android:layout_weight="1" />
+		<Button  android:id="@+id/rotate_right"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:text="right" android:layout_weight="1" />
+	</LinearLayout>
+	<Button android:id="@+id/imageedit_next" android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:text="preview shirt" />
+</RelativeLayout>
+

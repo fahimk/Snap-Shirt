@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme.Spread" parent="@android:Theme.Light">
+	
+		<!-- Window -->
+		<item name="android:windowTitleSize">50dp</item>
+		<item name="android:windowTitleStyle">@style/WindowTitle</item>
+		<item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+
+	</style>
+</resources>
+
